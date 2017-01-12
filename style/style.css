@@ -1,0 +1,121 @@
+
+body {
+	display: flex;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	background: linear-gradient(1deg, #f75050, #000052);
+	background-size: 400% 400%;
+
+}
+
+.gradientAnimate {
+	-webkit-animation: animation-gradient 13s ease forwards;
+	-moz-animation: animation-gradient 13s ease forwards;
+	animation: animation-gradient 13s ease forwards;
+}
+	@-webkit-keyframes animation-gradient {
+	    0%{background-position:51% 0%}
+	    100%{background-position:50% 100%}
+	}
+	@-moz-keyframes animation-gradient {
+	    0%{background-position:51% 0%}
+	    100%{background-position:50% 100%}
+	}
+	@keyframes animation-gradient {
+	    0%{background-position:51% 0%}
+	    100%{background-position:50% 100%}
+	}
+
+h1 {
+	font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+button, input {
+	padding: 20px;
+	color: #fff;
+	background: none;
+    border: 2px solid #fff;
+    font-size: 16px;
+    margin: 2px;
+}
+
+button:hover, input:hover {
+	color: #260045;
+	background: #fff;
+}
+
+.wrapper {
+	display: -webkit-flex;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+	max-width: 480px;
+	margin: 0 auto;
+
+}
+
+.instuctions {
+	max-width: 273px;
+	margin: 0 auto;
+}
+
+#formId {
+
+	// width: 100%;
+	margin: 20px;
+
+}
+
+#time {
+	// display: block;
+	margin: 5px;
+	font-size: 180px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Lora', serif;
+	border: 0px solid #222;
+	height: 150px;
+	margin-bottom: 30px;
+
+}
+
+.form-submit {
+	// display: block;
+	margin: 5px;
+	// width: 100%;
+	position: relative;
+	display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.controls {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+}
+
+.controls-button {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+}
+
+.messages {
+	min-height: 100px;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
